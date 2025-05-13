@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-* text=auto eol=lf
-=======
 * text=auto
->>>>>>> efb363e (initial value)
 
 *.blade.php diff=html
 *.css diff=css
