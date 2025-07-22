@@ -11,7 +11,11 @@ class TrustHosts extends Middleware
      *
      * @return array<int, string|null>
      */
+<<<<<<< HEAD
     public function hosts(): array
+=======
+    public function hosts()
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     {
         return [
             $this->allSubdomainsOfApplicationUrl(),

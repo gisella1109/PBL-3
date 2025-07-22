@@ -7,6 +7,18 @@ return [
     | Default Queue Connection Name
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    | Laravel's queue supports a variety of backends via a single, unified
+    | API, giving you convenient access to each backend using identical
+    | syntax for each. The default queue connection is defined below.
+    |
+    */
+
+    'default' => env('QUEUE_CONNECTION', 'database'),
+=======
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     | Laravel's queue API supports an assortment of back-ends via a single
     | API, giving you convenient access to each back-end using the same
     | syntax for every one. Here you may define a default connection.
@@ -14,15 +26,31 @@ return [
     */
 
     'default' => env('QUEUE_CONNECTION', 'sync'),
+<<<<<<< HEAD
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 
     /*
     |--------------------------------------------------------------------------
     | Queue Connections
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
     | Here you may configure the connection information for each server that
     | is used by your application. A default configuration has been added
     | for each back-end shipped with Laravel. You are free to add more.
+=======
+<<<<<<< HEAD
+    | Here you may configure the connection options for every queue backend
+    | used by your application. An example configuration is provided for
+    | each backend supported by Laravel. You're also free to add more.
+=======
+    | Here you may configure the connection information for each server that
+    | is used by your application. A default configuration has been added
+    | for each back-end shipped with Laravel. You are free to add more.
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     |
     | Drivers: "sync", "database", "beanstalkd", "sqs", "redis", "null"
     |
@@ -36,17 +64,42 @@ return [
 
         'database' => [
             'driver' => 'database',
+<<<<<<< HEAD
             'table' => 'jobs',
             'queue' => 'default',
             'retry_after' => 90,
+=======
+<<<<<<< HEAD
+            'connection' => env('DB_QUEUE_CONNECTION'),
+            'table' => env('DB_QUEUE_TABLE', 'jobs'),
+            'queue' => env('DB_QUEUE', 'default'),
+            'retry_after' => (int) env('DB_QUEUE_RETRY_AFTER', 90),
+=======
+            'table' => 'jobs',
+            'queue' => 'default',
+            'retry_after' => 90,
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
             'after_commit' => false,
         ],
 
         'beanstalkd' => [
             'driver' => 'beanstalkd',
+<<<<<<< HEAD
             'host' => 'localhost',
             'queue' => 'default',
             'retry_after' => 90,
+=======
+<<<<<<< HEAD
+            'host' => env('BEANSTALKD_QUEUE_HOST', 'localhost'),
+            'queue' => env('BEANSTALKD_QUEUE', 'default'),
+            'retry_after' => (int) env('BEANSTALKD_QUEUE_RETRY_AFTER', 90),
+=======
+            'host' => 'localhost',
+            'queue' => 'default',
+            'retry_after' => 90,
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
             'block_for' => 0,
             'after_commit' => false,
         ],
@@ -64,9 +117,21 @@ return [
 
         'redis' => [
             'driver' => 'redis',
+<<<<<<< HEAD
             'connection' => 'default',
             'queue' => env('REDIS_QUEUE', 'default'),
             'retry_after' => 90,
+=======
+<<<<<<< HEAD
+            'connection' => env('REDIS_QUEUE_CONNECTION', 'default'),
+            'queue' => env('REDIS_QUEUE', 'default'),
+            'retry_after' => (int) env('REDIS_QUEUE_RETRY_AFTER', 90),
+=======
+            'connection' => 'default',
+            'queue' => env('REDIS_QUEUE', 'default'),
+            'retry_after' => 90,
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
             'block_for' => null,
             'after_commit' => false,
         ],
@@ -75,6 +140,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     | Job Batching
     |--------------------------------------------------------------------------
     |
@@ -85,24 +154,53 @@ return [
     */
 
     'batching' => [
+<<<<<<< HEAD
         'database' => env('DB_CONNECTION', 'mysql'),
+=======
+        'database' => env('DB_CONNECTION', 'sqlite'),
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
         'table' => 'job_batches',
     ],
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     | Failed Queue Jobs
     |--------------------------------------------------------------------------
     |
     | These options configure the behavior of failed queue job logging so you
+<<<<<<< HEAD
     | can control which database and table are used to store the jobs that
     | have failed. You may change them to any database / table you wish.
+=======
+<<<<<<< HEAD
+    | can control how and where failed jobs are stored. Laravel ships with
+    | support for storing failed jobs in a simple file or in a database.
+    |
+    | Supported drivers: "database-uuids", "dynamodb", "file", "null"
+=======
+    | can control which database and table are used to store the jobs that
+    | have failed. You may change them to any database / table you wish.
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     |
     */
 
     'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
+<<<<<<< HEAD
         'database' => env('DB_CONNECTION', 'mysql'),
+=======
+<<<<<<< HEAD
+        'database' => env('DB_CONNECTION', 'sqlite'),
+=======
+        'database' => env('DB_CONNECTION', 'mysql'),
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
         'table' => 'failed_jobs',
     ],
 

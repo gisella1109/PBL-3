@@ -1,13 +1,44 @@
+<<<<<<< HEAD
 /.phpunit.cache
+=======
+<<<<<<< HEAD
+/.phpunit.cache
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 /node_modules
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/storage/pail
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 /vendor
 .env
 .env.backup
 .env.production
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+=======
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -17,3 +48,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+<<<<<<< HEAD
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8

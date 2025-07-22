@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
@@ -10,15 +11,61 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8"
+=======
+<<<<<<< HEAD
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The skeleton application for the Laravel framework.",
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0",
+        "laravel/tinker": "^2.10.1"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/pail": "^1.2.2",
+        "laravel/pint": "^1.13",
+        "laravel/sail": "^1.41",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "phpunit/phpunit": "^11.5.3"
+=======
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7"
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
+<<<<<<< HEAD
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0"
+=======
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
     },
     "autoload": {
         "psr-4": {
@@ -44,7 +91,21 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+<<<<<<< HEAD
             "@php artisan key:generate --ansi"
+=======
+<<<<<<< HEAD
+            "@php artisan key:generate --ansi",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
+=======
+            "@php artisan key:generate --ansi"
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
         ]
     },
     "extra": {
@@ -57,10 +118,27 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+=======
+<<<<<<< HEAD
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+=======
+            "pestphp/pest-plugin": true
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
         }
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8

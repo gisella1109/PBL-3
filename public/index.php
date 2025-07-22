@@ -1,10 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 use Illuminate\Contracts\Http\Kernel;
+=======
+<<<<<<< HEAD
+use Illuminate\Foundation\Application;
+=======
+use Illuminate\Contracts\Http\Kernel;
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// Determine if the application is in maintenance mode...
+=======
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
@@ -16,10 +30,27 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
+<<<<<<< HEAD
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// Register the Composer autoloader...
+require __DIR__.'/../vendor/autoload.php';
+
+// Bootstrap Laravel and handle the request...
+/** @var Application $app */
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$app->handleRequest(Request::capture());
+=======
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -53,3 +84,7 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+<<<<<<< HEAD
+=======
+>>>>>>> efb363e (initial value)
+>>>>>>> 8498eb2529faa2a04cb51e402f03bc4c6f493ac8
